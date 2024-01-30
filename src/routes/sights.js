@@ -1,4 +1,6 @@
-export default `crow
+export const sights = Object.freeze(
+    `
+crow
 bluebird
 cardinal
 blue jay
@@ -41,4 +43,8 @@ crab apple
 dragonfly
 CNC staff member
 robin
-birdhouse`.split('\n');
+birdhouse
+`
+        .split('\n')
+        .filter(s => s !== ''),
+);
